@@ -11,13 +11,14 @@
     --secondary-font: rgb(252, 154, 49);
     --third-font: rgb(229, 229, 229);
 
-    --button-color: rgb(246, 90, 34);
+    --button-color: rgb(232, 91, 40);
 }
 
 
 body{
     padding: 0px 0px;
     background-color: var(--primary-background);
+    cursor: default;
 }
 
 *{
