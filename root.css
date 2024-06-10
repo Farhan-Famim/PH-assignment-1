@@ -30,3 +30,11 @@ body{
     font-style: normal;
     color: var(--primary-font)
 }
+
+/*_________________________________________________________________________*/
+/*_________________________________________________________________________*/
+@media only screen and (min-width: 200px) and (max-width: 576px){
+    body{
+        padding: 0px 10px;
+    }
+}

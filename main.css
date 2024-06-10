@@ -1,0 +1,423 @@
+/* ___________________________________________________________________________ */
+/*about-me-section*/
+
+.about-me-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 180px;
+    align-items: center;
+
+    margin-top: 130px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-me-title, .experience-time{
+    font-size: 32px;
+    font-weight: 550;
+    color: var(--primary-font); 
+    letter-spacing: 2px;
+}
+
+.about-me-bio, .experience-bio{
+    font-size: 16px;
+    color: var(--third-font);
+
+    max-width: 500px;
+}
+
+.about-me-experience{ 
+    text-align: right;
+} 
+
+.about-me-experience img{
+    width: 120px;  
+}
+
+/* ___________________________________________________________________________ */
+/*experience-section*/
+
+.experience-container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+
+    align-items: center; 
+
+    background-image: url("./images/BG.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%; 
+
+    margin-top: 60px;
+    padding: 60px 0px;
+}
+
+.my-experience{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.my-experience-title{
+    font-size: 32px;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+.my-experience-bio{
+    font-size: 16px;
+    color: var(--third-font);
+
+    max-width: 450px;
+}
+
+.my-career{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.career-1, .career-2, .career-3{
+    display: flex;
+    flex-direction: column; 
+
+    border-bottom: 1px solid var(--third-font);  
+}
+
+.career-company{
+    font-size: 18px;
+    font-weight: 450;
+
+    padding-bottom: 14px;
+}
+
+.career-title{
+    font-size: 28px;
+    font-weight: 550;
+
+    padding-bottom: 18px;
+}
+
+/* ___________________________________________________________________________ */
+/*awards-section*/
+
+.awards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 150px;
+}
+
+.awards-title{
+    width: 635px;
+    border-bottom: solid 2px var(--secondary-font);
+    border-spacing: 24px;
+
+    font-size: 32px;
+    font-weight: 550;
+    letter-spacing: 2px;
+
+    margin-bottom: 23px;
+}
+
+.award-1, .award-2{
+    height: 100%;
+    width: 520px;
+
+    text-align: center; 
+    background-color: black;
+    border-radius: 12px;
+
+    padding: 25px 55px;
+    margin-bottom: 19px;
+}
+
+.award-name{
+    font-size: 20px;
+    font-weight: 420;
+
+    margin-bottom: 12px;
+}
+
+.award-des{
+    font-size: 16px;
+    color: rgb(181, 179, 179);
+}
+
+/* ___________________________________________________________________________ */
+/*projects-section*/
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 150px;
+}
+
+.projects-title{
+    width: 635px;
+    text-align: center;
+
+    border-bottom: solid 2px var(--secondary-font);
+    border-spacing: 24px;
+
+    font-size: 32px;
+    font-weight: 550;
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.project-buttons{
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+.project-buttons button{ 
+    font-size: 18px;
+    font-family: Arial;
+    color: var(--primary-font);
+    background-color: black;
+
+    border: none;
+
+    padding: 15px 20px;  
+    margin: 0px 2px;  
+} 
+
+.project-buttons button:hover{
+    background-color: var(--button-color);
+    cursor: pointer;
+}
+
+.project-1, .project-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    margin-bottom: 50px;
+}
+
+.project-image{
+    width: 38%;
+}
+
+.project-image img{
+    width: 100%;
+    border-radius: 16px; 
+}
+
+.project-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-title{
+    font-size: 24px;
+    font-weight: 550; 
+    letter-spacing: 2px; 
+}
+
+.project-des{
+    width: 400px;
+
+    font-size: 15px;
+    color: var(--third-font);
+}
+
+/*_________________________________________________________________________*/
+/*_________________________________________________________________________*/
+
+@media only screen and (min-width: 200px) and (max-width: 576px){ 
+    .about-me-container{ 
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    
+        margin-top: 340px;
+        padding-top: 40px;
+    }
+    
+    .about-me{  
+        row-gap: 4px;
+    }
+    
+    .about-me-title, .experience-time{
+        font-size: 22px;  
+    }
+    
+    .about-me-bio, .experience-bio{
+        width: 250px;
+        font-size: 14px;  
+    }
+    
+    .about-me-experience{ 
+        text-align: right; 
+    } 
+    
+    .about-me-experience img{
+        width: 110px;  
+    }
+
+    /* ___________________________________________________________________________ */
+    /*experience-section*/
+
+    .experience-container{ 
+        flex-direction: column;  
+        row-gap: 0px;
+
+        background-repeat: repeat-y; 
+
+        margin-top: 22px;
+        padding: 30px 3px;
+        padding-left: 5px;
+    }
+
+    .my-experience{ 
+        row-gap: 0px;
+    }
+
+    .my-experience-title{
+        font-size: 20px; 
+
+        margin-bottom: 6px;
+    }
+
+    .my-experience-bio{
+        font-size: 14px; 
+
+        margin-bottom: 35px;
+    }
+
+    .my-career{ 
+        row-gap: 0px;  
+    } 
+
+    .career-1, .career-2, .career-3{
+        margin: 15px 0px;
+    }
+
+    .career-company{
+        font-size: 15px; 
+
+        padding-bottom: 8px;
+    }
+
+    .career-title{
+        font-size: 17px;
+        font-weight: 550;
+
+        padding-bottom: 18px;
+    }
+
+    /* ___________________________________________________________________________ */
+    /*awards-section*/
+
+    .awards-container{ 
+        margin-top: 150px;
+    }
+
+    .awards-title{
+        width: 80%; 
+
+        font-size: 22px;  
+    }
+
+    .award-1, .award-2{
+        height: 100%;
+        width: 85%;
+
+        padding: 18px 9px;
+        margin-bottom: 15px;
+    }
+
+    .award-name{
+        font-size: 18px; 
+
+        margin-bottom: 16px;
+    }
+
+    .award-des{
+        font-size: 14px; 
+
+        padding: 0px 3px;
+    }
+
+        
+    /* ___________________________________________________________________________ */
+    /*projects-section*/
+
+    .projects-container{
+        margin-top: 135px;
+    }
+
+    .projects-title{
+        width: 80%;  
+
+        font-size: 22px; 
+
+        margin-bottom: 18px;
+    }
+
+    .project-buttons{
+        display: flex;
+        flex-direction: column; 
+
+        align-items: center;
+
+        margin-bottom: 30px; 
+    }
+
+    .project-buttons button{ 
+        font-size: 13px;  
+
+        padding: 10px 20px; 
+        margin-top: 5px;
+    }  
+
+    .project-1, .project-2{ 
+        flex-direction: column; 
+        row-gap: 0px;   
+
+        margin-bottom: 100px; 
+    }
+
+    .project-image{
+        width: 96%;
+        margin: 15px 0px; 
+    }  
+
+    .project-texts{
+        align-items: center;
+        row-gap: 0px;
+    }
+
+    .project-title{
+        text-align: center;
+        font-size: 22px; 
+
+        margin-bottom: 6px;
+    }
+
+    .project-des{
+        width: 85%;
+        text-align: center;
+
+        font-size: 13px; 
+    }
+}
